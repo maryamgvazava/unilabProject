@@ -1,0 +1,377 @@
+.services {
+  padding: 60px 170px;
+  display: flex;
+  flex-direction: column;
+}
+.services h2 {
+  font-size: 40px;
+}
+.services p {
+  font-size: 20px;
+}
+.services .seeAllServices {
+  color: #C85100;
+  font-size: 20px;
+  align-self: flex-end;
+}
+.services .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.services .cards .card {
+  margin-right: 20px;
+}
+.services .cards .card .serviceImg {
+  border-radius: 20px;
+  width: 100%;
+}
+.services .cards .card h3 {
+  font-size: 32px;
+}
+.services .cards .card p {
+  font-size: 18px;
+}
+
+.memorableTrips {
+  padding: 170px;
+}
+.memorableTrips h2 {
+  color: #424244;
+  font-size: 40px;
+  font-weight: 500;
+}
+.memorableTrips .tripsVideo {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.popularTours {
+  padding: 170px;
+}
+.popularTours .places {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.popularTours .places .tourcard {
+  margin-right: 20px;
+}
+.popularTours .places .tourcard img {
+  width: 100%;
+  height: 341px;
+  border-radius: 20px;
+}
+.popularTours .carrouselButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogSection {
+  padding: 170px;
+}
+.blogSection h2 {
+  font-size: 40px;
+}
+.blogSection .plogsDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.blogSection .plogsDiv .blogs {
+  margin-right: 20px;
+}
+.blogSection .plogsDiv .blogs img {
+  width: 100%;
+  height: 341px;
+  border-radius: 20px;
+}
+.blogSection .plogsDiv .blogs h3 {
+  font-size: 32px;
+}
+
+/* .bookTrip{
+    background-color: #E0E0E0;
+    padding: 170px;
+    h2{
+font-size: 40px;
+font-weight: 500;
+    }
+    form{
+        .inps{
+            display: flex;
+            justify-content: space-between;
+            input{
+                padding: 30px 50px;
+                width: 100%;
+                border: none;
+                border-radius: 20px;
+
+            }
+            ::placeholder{
+                font-size: 28px;
+            }
+
+
+            .locationDate{
+                margin-right: 80px;
+            }
+        }
+
+
+        input[type="submit"]{
+            width: 100%;
+            padding: 30px 50px;
+            background-color: #FF6700;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 32px;
+            font-weight: 500;
+
+        } 
+    }
+    } */
+.bookTrip {
+  background-color: #E0E0E0;
+  padding: 170px;
+}
+.bookTrip h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.bookTrip form {
+  position: relative;
+}
+.bookTrip form .inps {
+  display: flex;
+  justify-content: space-between;
+}
+.bookTrip form .inps .input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.bookTrip form .inps .input-wrapper img {
+  position: absolute;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+  /* right: 30px; */
+  right: 30px;
+  top: 20%;
+  cursor: pointer;
+}
+.bookTrip form .inps .input-wrapper .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.bookTrip form .inps .input-wrapper input {
+  padding: 30px 50px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.bookTrip form .inps .input-wrapper input::-moz-placeholder {
+  font-size: 28px;
+}
+.bookTrip form .inps .input-wrapper input::placeholder {
+  font-size: 28px;
+}
+.bookTrip form .inps .wrapper {
+  margin-right: 80px;
+}
+.bookTrip form .locationlist {
+  display: none;
+  position: absolute;
+  padding: 30px 50px;
+  width: calc((100% - 80px) / 2);
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  top: 60px;
+  height: 130%;
+  overflow-y: scroll;
+  z-index: 1;
+}
+.bookTrip form .locationlist ul {
+  padding: 0;
+}
+.bookTrip form .locationlist ul li {
+  font-size: 28px;
+  color: #424244;
+  padding: 15px 0;
+  border-top: solid #424244 1px;
+  list-style-type: none;
+}
+.bookTrip form .locationListDesc {
+  display: block;
+}
+.bookTrip form input[type=submit] {
+  width: 100%;
+  padding: 30px 50px;
+  background-color: #FF6700;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+footer .footersection {
+  display: flex;
+  justify-content: space-between;
+  padding: 170px;
+  background-color: #EAE9E9;
+}
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* .hamburgerTogle{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    position: absolute;
+right: 1px;
+top: 100px;
+
+
+} */
+.header-scrolled {
+  background-color: #EAE9E9;
+  color: #424244;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 1;
+  /* width: calc(100% - 340px); */
+  width: 100%;
+  padding: 0 170px;
+  position: fixed;
+}
+header .loginToggle {
+  position: absolute;
+  top: 133px;
+  right: 176px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: none;
+}
+header .loginToggle.showLoginToggle {
+  display: block;
+}
+header .loginToggle ul {
+  padding: 0;
+  width: 247px;
+}
+header .loginToggle ul li {
+  padding: 10px 20px;
+  list-style-type: none;
+  border-bottom: solid #FF6700 1px;
+}
+header .loginToggle ul li a {
+  font-size: 24px;
+  text-decoration-line: none;
+  color: #424244;
+  cursor: pointer;
+}
+header .ham {
+  display: none;
+}
+header h1 {
+  font-size: 48px;
+  font-weight: lighter;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* display: none; */
+}
+header nav .loginLogo {
+  position: relative;
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* display: none; */
+}
+header nav ul li {
+  margin: 0 15px;
+  list-style-type: none;
+  gap: 40;
+  font-weight: lighter;
+}
+header nav ul li a {
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.mainPage {
+  background-image: url(./images/bgImage.png);
+  height: 885px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.mainPage .offerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainPage .offerdiv h3 {
+  font-size: 40px;
+  margin: 10px;
+}
+.mainPage .offerdiv h1 {
+  letter-spacing: 0.1em;
+  font-size: 64px;
+  margin: 10px;
+  font-weight: 500;
+  /* height: 75px; */
+}
+.mainPage .offerdiv button {
+  font-size: 24px;
+  color: #fff;
+  background-color: #FF6700;
+  border-radius: 20px;
+  gap: 10;
+  border: none;
+  padding: 20px 40px;
+  margin: 10px;
+}/*# sourceMappingURL=main.css.map */

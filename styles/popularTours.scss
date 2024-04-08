@@ -1,0 +1,31 @@
+.popularTours{
+    padding: 170px;
+
+    .places{
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+        .tourcard{
+            margin-right: 20px;
+            img{
+                width: 100%;
+                height: 341px;
+                border-radius: 20px;
+            }
+        }
+
+    }
+
+
+
+    .carrouselButtons{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+  
+}

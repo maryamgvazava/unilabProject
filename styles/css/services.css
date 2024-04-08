@@ -1,0 +1,48 @@
+.services {
+  padding: 60px 170px;
+  display: flex;
+  flex-direction: column;
+}
+.services h2 {
+  font-size: 40px;
+}
+.services p {
+  font-size: 20px;
+}
+.services .seeAllServices {
+  color: #C85100;
+  font-size: 20px;
+  align-self: flex-end;
+}
+.services .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.services .cards .card {
+  margin-right: 20px;
+}
+.services .cards .card .serviceImg {
+  border-radius: 20px;
+  width: 100%;
+}
+.services .cards .card h3 {
+  font-size: 32px;
+}
+.services .cards .card p {
+  font-size: 18px;
+}
+
+.memorableTrips {
+  padding: 170px;
+}
+.memorableTrips h2 {
+  color: #424244;
+  font-size: 40px;
+  font-weight: 500;
+}
+.memorableTrips .tripsVideo {
+  width: 100%;
+  border-radius: 40px;
+}/*# sourceMappingURL=services.css.map */

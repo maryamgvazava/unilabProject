@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <script type="module" src="./scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>ExploreEra</h1>
+
+      <img class="ham" src="./images/Hamburger_LGburgerMenu.png" alt="" />
+      <nav>
+        <ul>
+          <li><a class="navComponent" href="">Home</a></li>
+          <li><a class="navComponent" href="">About us</a></li>
+          <li><a class="navComponent" href="">Blogs</a></li>
+          <li><a class="navComponent" href="">Our Services</a></li>
+          <li><a class="navComponent" href="">Our offers</a></li>
+        </ul>
+
+        <svg
+          class="loginLogo"
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40.000000pt"
+          height="41.000000pt"
+          viewBox="0 0 40.000000 41.000000"
+          preserveAspectRatio="xMidYMid meet"
+          fill="#FFFFFF"
+        >
+          <g
+            transform="translate(0.000000,41.000000) scale(0.100000,-0.100000)"
+            stroke="none"
+          >
+            <path
+              d="M147 342 c-27 -30 -22 -87 9 -111 34 -26 54 -26 88 0 35 27 37 90 4
+           113 -30 22 -81 20 -101 -2z m78 -4 c47 -21 41 -91 -9 -104 -33 -8 -64 11 -72
+           43 -6 21 -1 31 20 50 32 27 28 26 61 11z"
+            />
+            <path
+              d="M138 164 c-32 -17 -58 -62 -57 -96 0 -19 3 -17 13 11 18 49 59 81
+           106 81 47 0 88 -32 106 -81 11 -30 13 -31 13 -9 1 82 -104 136 -181 94z"
+            />
+          </g>
+        </svg>
+      </nav>
+
+      <div class="loginToggle">
+        <ul>
+          <li><a href="">Sign in</a></li>
+          <li><a href="">Sign up</a></li>
+          <li><a href="">Sign out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="mainPage">
+        <div class="offerdiv">
+          <h3>Visit Mountains In</h3>
+          <h1>ITALY</h1>
+          <button>See offer</button>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>Discover Our Services</h2>
+        <p>
+          ExploreEra provides a one-stop solution for individuals seeking
+          well-planned journeys. These services include expert advice on
+          destination selection, flight and accommodation bookings, and
+          customized itineraries to individual preferences.
+        </p>
+
+        <a class="seeAllServices" href="#">See all</a>
+        <div class="cards"></div>
+      </section>
+
+      <section class="memorableTrips">
+        <h2>Watch Our Memorable Trips</h2>
+
+        <video class="tripsVideo" controls>
+          <source
+            src="https://www.youtube.com/watch?v=ufOykYSswCk"
+            type="video/mp4"
+          />
+          <source
+            src="https://www.youtube.com/watch?v=ufOykYSswCk"
+            type="video/ogg"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="popularTours">
+        <h2>Popular Tour Offers</h2>
+        <div class="carrouselButtons">
+          <img
+            class="leftBtn"
+            src="./images/carrousel_Arrows/left.png"
+            alt=""
+          />
+          <img
+            class="rightBtn"
+            src="./images/carrousel_Arrows/right.png"
+            alt=""
+          />
+        </div>
+
+        <div class="places"></div>
+      </section>
+
+      <section class="blogSection">
+        <h2>Blogs</h2>
+        <div class="plogsDiv"></div>
+      </section>
+
+      <section class="bookTrip">
+        <h2>Ready To Book A Trip?</h2>
+        <form action="#">
+          <div class="inps">
+            <div class="input-wrapper wrapper">
+              <label for="startingLocation" class="visually-hidden"
+                >Your Starting Location</label
+              >
+              <input
+                class="locationDate location"
+                type="text"
+                id="startingLocation"
+                name="startingLocation"
+                placeholder="Your starting location"
+                aria-describedby="locationListDesc"
+              />
+              <img
+                src="./icons/downArrow.png"
+                alt="Down Arrow"
+                id="downArrow"
+                class="arrow-icon"
+              />
+            </div>
+            <div class="locationlist">
+              <ul>
+                <li>Rome, Italy</li>
+                <li>Luxor City, Egypt</li>
+                <li>Paris, France</li>
+                <li>Barcelona, Spain</li>
+                <li>Tsavo, Kenya</li>
+                <li>Prague, Chequia</li>
+                <li>Shanghai, China</li>
+                <li>Hanauma, Hawaii</li>
+              </ul>
+            </div>
+            <div class="input-wrapper">
+              <label for="tourOffer" class="visually-hidden"
+                >Choose a Tour Offer</label
+              >
+              <input
+                type="text"
+                id="tourOffer"
+                name="tourOffer"
+                placeholder="Choose a tour offer"
+              />
+              <img
+                src="./icons/downArrow.png"
+                alt="Down Arrow"
+                id="downArrow"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <div class="inps">
+            <div class="input-wrapper wrapper">
+              <label for="chooseDate" class="visually-hidden"
+                >Choose Date</label
+              >
+              <input
+                class="locationDate"
+                type="text"
+                id="chooseDate"
+                name="chooseDate"
+                placeholder="Choose date"
+              />
+              <img
+                src="./icons/downArrow.png"
+                alt="Down Arrow"
+                id="downArrow"
+                class="arrow-icon"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="persons" class="visually-hidden">Persons</label>
+              <input
+                type="text"
+                id="persons"
+                name="persons"
+                placeholder="Persons"
+              />
+              <img
+                src="./icons/downArrow.png"
+                alt="Down Arrow"
+                id="downArrow"
+                class="arrow-icon"
+              />
+            </div>
+          </div>
+
+          <input type="submit" value="Book Now" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footersection">
+        <div class="contactBar">
+          <h2>ExploreEra</h2>
+          <p>Travel agency which helps you to plan your perfect holidays</p>
+          <p>Follow us</p>
+          <div class="mediaIcons">
+            <img src="./icons/insta.png" alt="Facebook Icon" />
+            <img src="./icons/fb.png" alt="Facebook Icon" />
+            <img src="./icons/linkedin.png" alt="Facebook Icon" />
+          </div>
+        </div>
+
+        <div class="links">
+          <h3>Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Blogs</li>
+            <li>Our Services</li>
+            <li>Our Offers</li>
+          </ul>
+        </div>
+
+        <div class="contactUs">
+          <h3>Contact us</h3>
+          <p>exploreera@gmail.com</p>
+          <p>555111222</p>
+          <p>Subscribe news</p>
+          <input type="email" name="" id="" />
+        </div>
+      </section>
+      <div class="copyright">
+        <p>Copyright 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
