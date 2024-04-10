@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+.stays {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 60px 170px;
+}
+.stays aside {
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  width: 380px;
+}
+.stays aside .staysFilter h2 {
+  padding-bottom: 10px;
+  border-bottom: solid #FF6700 1px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.stays aside .staysFilter div {
+  margin: 40px 0;
+}
+.stays aside .staysFilter div h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.stays aside .staysFilter div form input {
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+.stays aside .staysFilter div form label {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.stays aside .staysFilter div p {
+  color: #C85100;
+  font-size: 18px;
+}
+.stays .hotels .hotelInfo {
+  display: flex;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  aspect-ratio: 38.2%;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+.stays .hotels .hotelInfo img {
+  margin-right: 20px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .hotelInfoSection {
+  display: flex;
+  margin-bottom: 40px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .hotelInfoSection .hotelDetails {
+  margin-right: 20px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .hotelInfoSection .hotelDetails h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .hotelInfoSection .hotelDetails .hotelName {
+  font-size: 22px;
+  color: rgba(66, 66, 68, 0.8);
+  margin-bottom: 15px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .hotelInfoSection .hotelDetails .hotelDistance {
+  font-size: 20px;
+  color: rgba(66, 66, 68, 0.8);
+  margin-bottom: 15px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .hotelInfoSection .hotelDetails .hotelDesc {
+  font-size: 16px;
+  color: rgba(66, 66, 68, 0.8);
+}
+.stays .hotels .hotelInfo .SearchedHotels .priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.stays .hotels .hotelInfo .SearchedHotels .priceInfo .ratingP {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .priceInfo .stars {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: -10px;
+  margin-bottom: 15px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .priceInfo .stars img {
+  margin-right: 10px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .priceInfo .priceP {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.stays .hotels .hotelInfo .SearchedHotels .priceInfo h3 {
+  font-size: 28px;
+}
+.stays .hotels .hotelInfo button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #FF6700;
+  border-radius: 20px;
+  border: none;
+  padding: 16px 0;
+  font-size: 24px;
+}
+.stays button {
+  background-color: #FF6700;
+  border-radius: 20px;
+  border: none;
+  padding: 18px 0;
+  font-size: 32px;
+  color: white;
+  width: calc(100% - 40px);
+  margin: 0px 20px;
+}/*# sourceMappingURL=stays.css.map */

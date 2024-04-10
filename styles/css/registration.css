@@ -4,14 +4,15 @@
   margin: 0;
 }
 
-.loginsection {
+.regSection {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
-  height: 800px;
+  padding: 231px 0 80px 0;
+  /* height: 800px; */
 }
-.loginsection form {
+.regSection form {
   width: 540px;
   height: auto;
   padding: 50px 70px;
@@ -19,35 +20,31 @@
   border-radius: 10px;
   border: none;
 }
-.loginsection form .enterEmail {
-  margin-bottom: 20px;
-}
-.loginsection form div label {
+.regSection form div label {
   font-size: 16px;
   color: #424244;
   padding: 20px;
 }
-.loginsection form div input {
+.regSection form div input {
   padding: 18px 18px 10px 20px;
   width: 100%;
   border: solid #FF6700 1px;
   border-radius: 10px;
   margin-top: 10px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
-.loginsection form div ::-moz-placeholder {
+.regSection form div ::-moz-placeholder {
   font-size: 20px;
   gap: 10;
   color: #424244;
-  /* line-height: inherit; */
 }
-.loginsection form div ::placeholder {
+.regSection form div ::placeholder {
   font-size: 20px;
   gap: 10;
   color: #424244;
-  /* line-height: inherit; */
 }
-.loginsection form #Continuebtn {
+.regSection form #registerBtn {
   width: 100%;
   padding: 13px 0;
   background-color: #FF6700;
@@ -58,38 +55,38 @@
   font-weight: 500;
   margin: 20px 0;
 }
-.loginsection form .line-container {
+.regSection form .line-container {
   display: flex;
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
 }
-.loginsection form .line-container .line {
+.regSection form .line-container .line {
   flex: 1;
   height: 1px;
   background-color: rgba(66, 66, 68, 0.7);
 }
-.loginsection form .line-container .text {
+.regSection form .line-container .text {
   padding: 0 10px;
   font-size: 16px;
   color: rgba(66, 66, 68, 0.7);
 }
-.loginsection form .mediaDiv {
+.regSection form .mediaDiv {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.loginsection form .mediaDiv img {
+.regSection form .mediaDiv img {
   width: 70px;
   height: 70px;
   margin: 0;
 }
-.loginsection form .terms {
+.regSection form .terms {
   margin-top: 20px;
   font-size: 16px;
   color: #424244;
   text-align: center;
 }
-.loginsection form .terms a {
+.regSection form .terms a {
   color: #C85100;
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=registration.css.map */

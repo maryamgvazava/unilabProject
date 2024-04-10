@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+.flightChoices {
+  display: flex;
+  padding: 170px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.flightChoices aside {
+  width: 380px;
+}
+.flightChoices aside .slogan {
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.flightChoices aside .slogan ul {
+  padding: 0;
+}
+.flightChoices aside .slogan ul li {
+  font-size: 28px;
+  list-style-type: none;
+  padding: 20px 0;
+}
+.flightChoices aside .slogan ul .borderLines {
+  border-bottom: solid #FF6700 1px;
+  border-top: solid #FF6700 1px;
+}
+.flightChoices aside .asidesection {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.flightChoices aside .asidesection .stop {
+  background-color: #FFFFFF;
+  padding: 20px 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.flightChoices aside .asidesection .stop .stopHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flightChoices aside .asidesection .stop .stopHeader .stoph3 {
+  padding-left: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.flightChoices aside .asidesection .stop form input {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+.flightChoices aside .asidesection .stop form label {
+  font-size: 24px;
+}
+.flightChoices aside .asidesection .airlines, .flightChoices aside .asidesection .airports, .flightChoices aside .asidesection .duration, .flightChoices aside .asidesection .prices {
+  padding: 0;
+  margin: 40px 0;
+}
+.flightChoices aside .asidesection .times {
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.flightChoices aside .asidesection .times h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.flightChoices aside .asidesection .times h3 {
+  /* padding-left: 20px; */
+  font-size: 24px;
+  font-weight: 400;
+}
+.flightChoices aside .asidesection .times .timeRange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flightChoices aside .asidesection .times .timeRange p {
+  color: rgba(66, 66, 68, 0.6);
+}
+.flightChoices aside .asidesection .times .range {
+  position: relative;
+  margin: 10px 0 20px 0;
+}
+.flightChoices aside .asidesection .times .range .rangepoints {
+  display: flex;
+  justify-content: space-between;
+}
+.flightChoices aside .asidesection .times .range .rangepoints .rangePoint1, .flightChoices aside .asidesection .times .range .rangepoints .rangePoint2 {
+  border: solid #FF6700 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.flightChoices aside .asidesection .times .range .rangeLine {
+  position: absolute;
+  border: solid #FF6700 1px;
+  width: 100%;
+  top: 50%;
+}
+.flightChoices aside .asidesection .priceCalculation .priceCalc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flightChoices aside .asidesection .priceCalculation input {
+  padding: 10px 20px;
+  margin: 10px 0 20px 0;
+  width: calc(100% - 40px);
+}
+.flightChoices aside .asidesection .priceCalculation .payments {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+}
+.flightChoices aside .asidesection .priceCalculation .payments p {
+  font-size: 20px;
+}
+.flightChoices aside .asidesection .priceCalculation .payments img {
+  margin-right: 10px;
+}
+.flightChoices .flightDates {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  /* display: inline-block; */
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.flightChoices .flightDates .oneFlightInfo {
+  width: 1180px;
+  height: 192px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 50px;
+  margin-bottom: 20px;
+}
+.flightChoices .flightDates .oneFlightInfo .aviaprovider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flightChoices .flightDates .oneFlightInfo .aviaprovider img {
+  margin-bottom: 10px;
+}
+.flightChoices .flightDates .oneFlightInfo .aviaprovider p {
+  font-size: 20px;
+}
+.flightChoices .flightDates .flightDuration {
+  width: 447px;
+  display: flex;
+  align-items: flex-end;
+}
+.flightChoices .flightDates .flightDuration .flightTimes {
+  width: 342px;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .landing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .landing p {
+  font-size: 24px;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .flightTime .times {
+  display: flex;
+  justify-content: space-between;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .rangeLines {
+  position: relative;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .rangeLines .rangeSquares {
+  display: flex;
+  justify-content: center;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .rangeLines .rangeSquares .rangeSquare1, .flightChoices .flightDates .flightDuration .flightTimes .rangeLines .rangeSquares .rangeSquare2 {
+  width: 15px;
+  height: 15px;
+  border: solid grey 1px;
+  background-color: rgb(218, 210, 210);
+  z-index: 20000;
+}
+.flightChoices .flightDates .flightDuration .flightTimes .rangeLines .TimerangeLine {
+  position: absolute;
+  border: solid #FF6700 1px;
+  width: 100%;
+  top: 50%;
+}
+.flightChoices .flightDates .flightDuration .totalHours {
+  margin-left: 20px;
+  font-size: 24px;
+  color: rgba(66, 66, 68, 0.6);
+}
+.flightChoices .flightDates .totalPriceDiv {
+  width: 173px;
+}
+.flightChoices .flightDates .totalPriceDiv .totalPrice {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: #FF6700 solid 1px;
+}
+.flightChoices .flightDates .totalPriceDiv button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #FF6700;
+  border: none;
+  padding: 10px 0;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.flightChoices .showMore {
+  background-color: #FF6700;
+  border-radius: 20px;
+  border: none;
+  padding: 18px 0;
+  font-size: 32px;
+  color: white;
+}/*# sourceMappingURL=flightChoices.css.map */

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  color: #424244;
+}
+
+.filterBtnSection {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 60px 170px 308px;
+}
+.filterBtnSection .filterButtons {
+  background-color: #ffffff;
+  width: auto;
+  display: inline-block;
+}
+.filterBtnSection .filterButtons button {
+  margin-right: 40px;
+  /* border-radius: 20px; */
+  border: none;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  letter-spacing: 5%;
+}
+.filterBtnSection .filterButtons .flights {
+  background-color: #FF6700;
+  color: #ffffff;
+  border-radius: 20px;
+}
+.filterBtnSection .planFlight {
+  display: flex;
+  margin-top: 60px;
+}
+.filterBtnSection .planFlight div select {
+  border: none;
+  margin-right: 20px;
+  background: none;
+}
+.filterBtnSection .planFlight div img {
+  position: absolute;
+}
+.filterBtnSection .filteredInputs {
+  margin-top: 20px;
+}
+.filterBtnSection .filteredInputs form {
+  display: flex;
+}
+.filterBtnSection .filteredInputs form div input {
+  padding: 15px 27.5px;
+  border: solid #FF6700 1px;
+  border-radius: 20px;
+  margin-right: 20px;
+  width: 430px;
+}
+.filterBtnSection .filteredInputs form .from, .filterBtnSection .filteredInputs form .to, .filterBtnSection .filteredInputs form .calendar {
+  position: relative;
+}
+.filterBtnSection .filteredInputs form .from .location, .filterBtnSection .filteredInputs form .from .destination, .filterBtnSection .filteredInputs form .from .calendarIcons, .filterBtnSection .filteredInputs form .to .location, .filterBtnSection .filteredInputs form .to .destination, .filterBtnSection .filteredInputs form .to .calendarIcons, .filterBtnSection .filteredInputs form .calendar .location, .filterBtnSection .filteredInputs form .calendar .destination, .filterBtnSection .filteredInputs form .calendar .calendarIcons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 55px;
+}
+.filterBtnSection .filteredInputs form .from .location span, .filterBtnSection .filteredInputs form .from .destination span, .filterBtnSection .filteredInputs form .from .calendarIcons span, .filterBtnSection .filteredInputs form .to .location span, .filterBtnSection .filteredInputs form .to .destination span, .filterBtnSection .filteredInputs form .to .calendarIcons span, .filterBtnSection .filteredInputs form .calendar .location span, .filterBtnSection .filteredInputs form .calendar .destination span, .filterBtnSection .filteredInputs form .calendar .calendarIcons span {
+  padding: 10px;
+  font-size: 20px;
+}
+.filterBtnSection .filteredInputs form .from .destination, .filterBtnSection .filteredInputs form .to .destination, .filterBtnSection .filteredInputs form .calendar .destination {
+  left: 40px;
+}
+.filterBtnSection .filteredInputs form .from .calendarIcons, .filterBtnSection .filteredInputs form .to .calendarIcons, .filterBtnSection .filteredInputs form .calendar .calendarIcons {
+  left: 20px;
+}
+.filterBtnSection .filteredInputs form .from .plusIcon, .filterBtnSection .filteredInputs form .to .plusIcon, .filterBtnSection .filteredInputs form .calendar .plusIcon {
+  position: absolute;
+  right: 40px;
+  top: 5px;
+}
+.filterBtnSection .filteredInputs form #search {
+  background-color: #FF6700;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 75px;
+  border: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=flightScedule.css.map */

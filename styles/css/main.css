@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
 .services {
   padding: 60px 170px;
   display: flex;
@@ -47,6 +53,12 @@
   border-radius: 40px;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
 .popularTours {
   padding: 170px;
 }
@@ -67,6 +79,12 @@
 .popularTours .carrouselButtons {
   display: flex;
   justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 
 .blogSection {
@@ -92,48 +110,12 @@
   font-size: 32px;
 }
 
-/* .bookTrip{
-    background-color: #E0E0E0;
-    padding: 170px;
-    h2{
-font-size: 40px;
-font-weight: 500;
-    }
-    form{
-        .inps{
-            display: flex;
-            justify-content: space-between;
-            input{
-                padding: 30px 50px;
-                width: 100%;
-                border: none;
-                border-radius: 20px;
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
 
-            }
-            ::placeholder{
-                font-size: 28px;
-            }
-
-
-            .locationDate{
-                margin-right: 80px;
-            }
-        }
-
-
-        input[type="submit"]{
-            width: 100%;
-            padding: 30px 50px;
-            background-color: #FF6700;
-            border: none;
-            border-radius: 20px;
-            color: white;
-            font-size: 32px;
-            font-weight: 500;
-
-        } 
-    }
-    } */
 .bookTrip {
   background-color: #E0E0E0;
   padding: 170px;
@@ -229,15 +211,112 @@ font-weight: 500;
   font-weight: 500;
 }
 
-footer .footersection {
-  display: flex;
-  justify-content: space-between;
-  padding: 170px;
-  background-color: #EAE9E9;
-}
 * {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  color: #424244;
+}
+
+footer {
+  background-color: #EAE9E9;
+  width: 100%;
+}
+footer .footersection {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 170px 0 170px;
+}
+footer .footersection .contactBar h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+footer .footersection .contactBar p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+footer .footersection .contactBar .followUs {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+footer .footersection .contactBar .mediaIcons {
+  margin-bottom: 20px;
+}
+footer .footersection .contactBar .mediaIcons .fbicon {
+  margin: 0 20px;
+}
+footer .footersection .links h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+footer .footersection .links ul {
+  height: 100%;
+  padding: 0;
+}
+footer .footersection .links ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 24px;
+}
+footer .footersection .contactUs {
+  position: relative;
+}
+footer .footersection .contactUs h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+footer .footersection .contactUs .exploreMail {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+footer .footersection .contactUs .callNumber {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+footer .footersection .contactUs .subscribe {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+footer .footersection .contactUs #emailUs {
+  border-radius: 10px;
+  gap: 10;
+  padding: 10px 13px;
+  background-color: #EAE9E9;
+  border: solid #424244 1px;
+  position: relative;
+}
+footer .footersection .contactUs ::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .footersection .contactUs ::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .footersection .contactUs .sendArrow {
+  position: absolute;
+  /* top:5px */
+  left: 147px;
+  bottom: 62px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 0 40px 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 
 /* .hamburgerTogle{

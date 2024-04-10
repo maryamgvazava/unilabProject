@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin: 0;
+
+}
+
+.loginsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    height: 800px;
+  
+    form{
+        width: 540px;
+        height: auto;
+        padding: 50px 70px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: none;
+   
+
+
+        .enterEmail{
+            margin-bottom: 20px;
+            #emailAddress{
+               
+
+            }
+        }
+
+        .enterPassword{
+            #pass{
+
+            }
+        }
+
+        div{
+            label{
+                font-size: 16px;
+                color: #424244;
+                padding: 20px;
+            }
+
+            input{
+                padding: 18px 18px 10px 20px;
+                width: 100%;
+                border: solid #FF6700 1px;
+                border-radius: 10px;
+                margin-top: 10px;
+                box-sizing: border-box;
+            }
+
+            ::placeholder{
+                font-size: 20px;
+                gap: 10;
+                color: #424244;
+                /* line-height: inherit; */
+
+            }
+        }
+        #Continuebtn{
+            width: 100%;
+            padding: 13px 0;
+            background-color: #FF6700;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 20px 0;
+          
+        }
+
+        .line-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+           
+            .line {
+                flex: 1;
+                height: 1px;
+                background-color:  rgba(66, 66, 68, 70%); 
+              }
+              .text {
+                padding: 0 10px;
+                font-size: 16px;
+                color: rgba(66, 66, 68, 70%);
+              }
+          }
+          
+        
+          
+        
+
+        .mediaDiv{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    margin: 0;
+                }
+        }
+
+        .terms{
+            margin-top: 20px;
+            font-size: 16px;
+            color: #424244;
+           text-align: center;
+            a{
+                color: #C85100;
+            }
+
+        }
+    }
+}
