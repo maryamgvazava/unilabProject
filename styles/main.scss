@@ -3,30 +3,17 @@
 @import 'blogs.scss';
 @import 'bookTrip.scss';
 @import 'footer.scss';
+@import 'mixins.scss';
+
+
 *{
-    box-sizing: border-box;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     margin: 0;
-
+    @include General-Styles;
 }
 
-@mixin  my-class ($justify-content: space-between,$align-items:center, $flex-direction:row ) {
-    display:flex;
-    justify-content:$justify-content;
-    align-items:$align-items; 
-    flex-direction: $flex-direction;
+body{
+    margin: 0;
 }
 
-/* .hamburgerTogle{
-    display: flex;
-    width: 200px;
-    flex-direction: column;
-    position: absolute;
-right: 1px;
-top: 100px;
-
-    
-} */
 .header-scrolled {
     background-color: #EAE9E9; 
     color: #424244;
@@ -38,12 +25,12 @@ body{
 
 header{
     @include my-class;
-    box-sizing: border-box;
     color: #fff;
+ 
 z-index: 1;
     /* width: calc(100% - 340px); */
     width: 100%;
-    padding: 0 170px;
+    padding: 20px 170px;
     position: fixed;
 
 .loginToggle{
@@ -126,17 +113,23 @@ display: none;
 }
 
 .mainPage{
-    background-image: url(./images/bgImage.png);
+    /* background-image: url(https://i0.wp.com/andrevala.com/wp-content/uploads/2022/06/Lakehouse_01_728p.jpg?w=728&ssl=1); */
+    
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.247) 9%, rgba(0, 0, 0, 0.151) 100%), url(https://images.unsplash.com/photo-1541420937988-702d78cb9fa1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; 
+    background-position: center;  
     height: 885px;
+    color: #fff;
     @include my-class(center, center, column);
     color: #fff;
-   
     .offerdiv{
+        z-index: 2;
         @include my-class(center, center, column);
         h3{
             font-size: 40px;
             margin: 10px;
-
+            color: #fff;
         }
 
         h1{
@@ -145,7 +138,7 @@ display: none;
             margin: 10px;
             font-weight:500;
             /* height: 75px; */
-         
+            color: #fff;
         }
 
         button{
@@ -159,5 +152,4 @@ display: none;
             margin: 10px;
         }
     }
-
 }

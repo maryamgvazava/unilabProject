@@ -77,6 +77,46 @@ export default function popularTours (){
 
     ]
 
+
+    
+const places = document.querySelector('.places');
+const leftBtn = document.querySelector('.leftBtn');
+const rightBtn = document.querySelector('.rightBtn');
+const ToursPerPage = 4;
+let currentPage = 0;
+
+function displayTours() {
+    places.innerHTML = ''; // Clear previous content
+    const startIndex = currentPage * ToursPerPage;
+    const endIndex = startIndex + ToursPerPage;
+    const currentTours = popularTours.slice(startIndex, endIndex);
+
+    currentTours.forEach(tour => {
+        let tourcard = document.createElement("div");
+        tourcard.classList.add("tourcard");
+        tourcard.innerHTML = `
+            <img src="${tour.image}" alt="">
+            <h3>${tour.title}</h3>
+            <p>${tour.duration}</p>
+            <p>${tour.price}</p>
+        `;
+        places.appendChild(tourcard);
+    });
+}
+
+displayTours(); 
+
+leftBtn.addEventListener('click', function () {
+    currentPage = (currentPage + 1) % Math.ceil(popularTours.length / ToursPerPage);
+    displayTours(); 
+});
+
+rightBtn.addEventListener('click', function () {
+    currentPage = (currentPage + 1) % Math.ceil(popularTours.length / ToursPerPage);
+    displayTours();
+});
+
+
     return popularTours;
 }
 

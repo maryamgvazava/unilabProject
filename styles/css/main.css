@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body {
   margin: 0;
 }
 
@@ -22,7 +20,7 @@
 }
 .services .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-top: 10px;
 }
@@ -41,7 +39,7 @@
 }
 
 .memorableTrips {
-  padding: 170px;
+  padding: 92px 170px 0 170px !important;
 }
 .memorableTrips h2 {
   color: #424244;
@@ -53,14 +51,12 @@
   border-radius: 40px;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body {
   margin: 0;
 }
 
 .popularTours {
-  padding: 170px;
+  padding: 60px 170px;
 }
 .popularTours .places {
   /* display: flex;
@@ -79,46 +75,46 @@
 .popularTours .carrouselButtons {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+}
+.popularTours .carrouselButtons .leftBtn {
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body {
   margin: 0;
 }
 
 .blogSection {
-  padding: 170px;
+  padding: 0 170px 60px 170px;
 }
 .blogSection h2 {
   font-size: 40px;
 }
-.blogSection .plogsDiv {
+.blogSection .blogsDiv {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-.blogSection .plogsDiv .blogs {
+.blogSection .blogsDiv .blogs {
   margin-right: 20px;
 }
-.blogSection .plogsDiv .blogs img {
+.blogSection .blogsDiv .blogs img {
   width: 100%;
   height: 341px;
   border-radius: 20px;
 }
-.blogSection .plogsDiv .blogs h3 {
+.blogSection .blogsDiv .blogs h3 {
   font-size: 32px;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body {
   margin: 0;
 }
 
 .bookTrip {
   background-color: #E0E0E0;
-  padding: 170px;
+  padding: 50px 170px;
 }
 .bookTrip h2 {
   font-size: 40px;
@@ -135,87 +131,40 @@
   position: relative;
   width: 100%;
 }
-.bookTrip form .inps .input-wrapper img {
-  position: absolute;
-  top: -10px;
-  width: 40px;
-  height: 40px;
-  /* right: 30px; */
-  right: 30px;
-  top: 20%;
-  cursor: pointer;
-}
-.bookTrip form .inps .input-wrapper .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.bookTrip form .inps .input-wrapper input {
+.bookTrip form .inps select,
+.bookTrip form .inps .chooseDate {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(66, 66, 68, 0.629);
   padding: 30px 50px;
   width: 100%;
   border: none;
   border-radius: 20px;
   margin-bottom: 40px;
-  position: relative;
 }
-.bookTrip form .inps .input-wrapper input::-moz-placeholder {
+.bookTrip form .inps select option,
+.bookTrip form .inps .chooseDate option {
   font-size: 28px;
-}
-.bookTrip form .inps .input-wrapper input::placeholder {
-  font-size: 28px;
+  color: rgb(66, 66, 68);
+  font-weight: 400;
 }
 .bookTrip form .inps .wrapper {
   margin-right: 80px;
 }
-.bookTrip form .locationlist {
-  display: none;
-  position: absolute;
-  padding: 30px 50px;
-  width: calc((100% - 80px) / 2);
-  border: none;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-bottom: 40px;
-  background-color: #fff;
-  top: 60px;
-  height: 130%;
-  overflow-y: scroll;
-  z-index: 1;
-}
-.bookTrip form .locationlist ul {
-  padding: 0;
-}
-.bookTrip form .locationlist ul li {
-  font-size: 28px;
-  color: #424244;
-  padding: 15px 0;
-  border-top: solid #424244 1px;
-  list-style-type: none;
-}
-.bookTrip form .locationListDesc {
-  display: block;
-}
-.bookTrip form input[type=submit] {
+.bookTrip form .bookNow {
+  background-color: rgb(255, 103, 0);
   width: 100%;
-  padding: 30px 50px;
-  background-color: #FF6700;
-  border: none;
   border-radius: 20px;
-  color: white;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 37.5px;
+  color: #fff;
+  border: none;
+  padding: 30px 50px;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body {
   margin: 0;
-  color: #424244;
 }
 
 footer {
@@ -315,20 +264,13 @@ footer .copyright {
 
 * {
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+body {
   margin: 0;
 }
 
-/* .hamburgerTogle{
-    display: flex;
-    width: 200px;
-    flex-direction: column;
-    position: absolute;
-right: 1px;
-top: 100px;
-
-
-} */
 .header-scrolled {
   background-color: #EAE9E9;
   color: #424244;
@@ -343,12 +285,11 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  box-sizing: border-box;
   color: #fff;
   z-index: 1;
   /* width: calc(100% - 340px); */
   width: 100%;
-  padding: 0 170px;
+  padding: 20px 170px;
   position: fixed;
 }
 header .loginToggle {
@@ -419,8 +360,13 @@ header nav ul li a {
 }
 
 .mainPage {
-  background-image: url(./images/bgImage.png);
+  /* background-image: url(https://i0.wp.com/andrevala.com/wp-content/uploads/2022/06/Lakehouse_01_728p.jpg?w=728&ssl=1); */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.247) 9%, rgba(0, 0, 0, 0.151) 100%), url(https://images.unsplash.com/photo-1541420937988-702d78cb9fa1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
   height: 885px;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,6 +374,7 @@ header nav ul li a {
   color: #fff;
 }
 .mainPage .offerdiv {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,6 +383,7 @@ header nav ul li a {
 .mainPage .offerdiv h3 {
   font-size: 40px;
   margin: 10px;
+  color: #fff;
 }
 .mainPage .offerdiv h1 {
   letter-spacing: 0.1em;
@@ -443,6 +391,7 @@ header nav ul li a {
   margin: 10px;
   font-weight: 500;
   /* height: 75px; */
+  color: #fff;
 }
 .mainPage .offerdiv button {
   font-size: 24px;

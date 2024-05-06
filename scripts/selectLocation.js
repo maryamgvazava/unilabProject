@@ -1,5 +1,5 @@
 export default function selectLocation (){
-const locationlist = document.querySelector('.locationlist')
+// const locationlist = document.querySelector('.locationlist')
 const downArrow = document.querySelectorAll('.arrow-icon')
 
 for (let arrow of downArrow) {

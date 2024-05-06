@@ -9,7 +9,8 @@
   </head>
   <body>
     <header>
-      <h1>ExploreEra</h1>
+    
+      <h1 class="logo">ExploreEra</h1>
 
       <img class="ham" src="./images/Hamburger_LGburgerMenu.png" alt="" />
       <nav>
@@ -18,7 +19,7 @@
           <li><a class="navComponent" href="">About us</a></li>
           <li><a class="navComponent" href="">Blogs</a></li>
           <li><a class="navComponent" href="">Our Services</a></li>
-          <li><a class="navComponent" href="">Our offers</a></li>
+          <li><a class="navComponent" href="./flightScedule.html">Our offers</a></li>
         </ul>
 
         <svg
@@ -50,8 +51,8 @@
 
       <div class="loginToggle">
         <ul>
-          <li><a href="">Sign in</a></li>
-          <li><a href="">Sign up</a></li>
+          <li><a href="login.html" target="_blank">Sign in</a></li>
+          <li><a href="registration.html" target="_blank">Sign up</a></li>
           <li><a href="">Sign out</a></li>
         </ul>
       </div>
@@ -82,17 +83,8 @@
       <section class="memorableTrips">
         <h2>Watch Our Memorable Trips</h2>
 
-        <video class="tripsVideo" controls>
-          <source
-            src="https://www.youtube.com/watch?v=ufOykYSswCk"
-            type="video/mp4"
-          />
-          <source
-            src="https://www.youtube.com/watch?v=ufOykYSswCk"
-            type="video/ogg"
-          />
-          Your browser does not support the video tag.
-        </video>
+        <iframe width="100%" height="703" src="https://www.youtube.com/embed/ZPdk5GaIDjo" title="Vivaldi Four Seasons: Winter (L&#39;Inverno), original version. Freivogel &amp; Voices of Music  RV 297 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
       </section>
 
       <section class="popularTours">
@@ -115,7 +107,7 @@
 
       <section class="blogSection">
         <h2>Blogs</h2>
-        <div class="plogsDiv"></div>
+        <div class="blogsDiv"></div>
       </section>
 
       <section class="bookTrip">
@@ -123,136 +115,48 @@
         <form action="#">
           <div class="inps">
             <div class="input-wrapper wrapper">
-              <label for="startingLocation" class="visually-hidden"
-                >Your Starting Location</label
-              >
-              <input
-                class="locationDate location"
-                type="text"
-                id="startingLocation"
-                name="startingLocation"
-                placeholder="Your starting location"
-                aria-describedby="locationListDesc"
-              />
-              <img
-                src="./icons/downArrow.png"
-                alt="Down Arrow"
-                id="downArrow"
-                class="arrow-icon"
-              />
+             
+              <select class="" >
+                <option value="" disabled selected>Your Starting Location</option>
+                  <option value="">Rome, Italy</option>
+                  <option value="">Paris, France</option>
+                  <option value="">Barcelona, Spain</option>
+                  <option value="">Tsavo, Kenya</option>
+                  <option value="">Luxor City, Egypt</option>
+                  <option value="">Prague, Chequia</option>
+                  <option value="">Shanghai, China</option>
+                  <option value="">Hanauma, Hawaii</option>
+              </select>
             </div>
-            <div class="locationlist">
-              <ul>
-                <li>Rome, Italy</li>
-                <li>Luxor City, Egypt</li>
-                <li>Paris, France</li>
-                <li>Barcelona, Spain</li>
-                <li>Tsavo, Kenya</li>
-                <li>Prague, Chequia</li>
-                <li>Shanghai, China</li>
-                <li>Hanauma, Hawaii</li>
-              </ul>
-            </div>
+           
             <div class="input-wrapper">
-              <label for="tourOffer" class="visually-hidden"
-                >Choose a Tour Offer</label
-              >
-              <input
-                type="text"
-                id="tourOffer"
-                name="tourOffer"
-                placeholder="Choose a tour offer"
-              />
-              <img
-                src="./icons/downArrow.png"
-                alt="Down Arrow"
-                id="downArrow"
-                class="arrow-icon"
-              />
+              <select class="" >
+                <option value="" disabled selected>Choose a Tour Offer</option>
+                  <option value="">Family Vacation</option>
+                  <option value="">Cruises</option>
+                  <option value="">Group Tours</option>
+                 
+              </select>
+            
             </div>
           </div>
 
           <div class="inps">
             <div class="input-wrapper wrapper">
-              <label for="chooseDate" class="visually-hidden"
-                >Choose Date</label
-              >
-              <input
-                class="locationDate"
-                type="text"
-                id="chooseDate"
-                name="chooseDate"
-                placeholder="Choose date"
-              />
-              <img
-                src="./icons/downArrow.png"
-                alt="Down Arrow"
-                id="downArrow"
-                class="arrow-icon"
-              />
+              <input type="date" name="" id="" class="chooseDate">
             </div>
             <div class="input-wrapper">
-              <label for="persons" class="visually-hidden">Persons</label>
-              <input
-                type="text"
-                id="persons"
-                name="persons"
-                placeholder="Persons"
-              />
-              <img
-                src="./icons/downArrow.png"
-                alt="Down Arrow"
-                id="downArrow"
-                class="arrow-icon"
-              />
+              <input type="number" name="" id="" class="chooseDate" min="1" value="Persons 0" placeholder="Persons">
+
             </div>
           </div>
-
-          <input type="submit" value="Book Now" />
+          <input type="submit" value="Book Now" class="bookNow" />
         </form>
       </section>
     </main>
-    <!-- <object type="text/html" data="footer.html"></object> -->
-    <iframe src="footer.html" width="100%" height="600px"></iframe>
-    <!-- <footer>
-      <section class="footersection">
-        <div class="contactBar">
-          <h2>ExploreEra</h2>
-          <p>Travel agency which helps you to plan your perfect holidays</p>
-          <p>Follow us</p>
-          <div class="mediaIcons">
-            <img src="./icons/insta.png" alt="Facebook Icon" />
-            <img src="./icons/fb.png" alt="Facebook Icon" />
-            <img src="./icons/linkedin.png" alt="Facebook Icon" />
-          </div>
-        </div>
 
-        <div class="links">
-          <h3>Links</h3>
-          <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Blogs</li>
-            <li>Our Services</li>
-            <li>Our Offers</li>
-          </ul>
-        </div>
-
-        <div class="contactUs">
-          <h3>Contact us</h3>
-          <p>exploreera@gmail.com</p>
-          <p>555111222</p>
-          <p>Subscribe news</p>
-          <input type="email" name="" id="" />
-        </div>
-      </section>
-      <div class="copyright">
-        <p>Copyright 2024</p>
-      </div>
-    </footer> -->
-
- 
-
+    <iframe src="footer.html" width="100%" height="546" style="border:none"></iframe>
+    
 
   </body>
 </html>
