@@ -6,8 +6,7 @@ body{
     padding: 60px 170px;
 
     .places{
-        /* display: flex;
-        flex-wrap: wrap; */
+
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
@@ -22,8 +21,11 @@ body{
         }
 
     }
-
-
+    @media screen and (max-width: 900px) {
+        .places {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 
     .carrouselButtons{
         display: flex;
@@ -33,4 +35,9 @@ body{
             cursor:pointer;
         }
     } 
+}
+@media screen and (max-width: 900px) {
+    .popularTours{
+        padding: 60px 70px;
+ }
 }

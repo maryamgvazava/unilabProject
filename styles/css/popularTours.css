@@ -6,8 +6,6 @@ body {
   padding: 60px 170px;
 }
 .popularTours .places {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -19,6 +17,11 @@ body {
   height: 341px;
   border-radius: 20px;
 }
+@media screen and (max-width: 900px) {
+  .popularTours .places {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .popularTours .carrouselButtons {
   display: flex;
   justify-content: space-between;
@@ -26,4 +29,10 @@ body {
 }
 .popularTours .carrouselButtons .leftBtn {
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .popularTours {
+    padding: 60px 70px;
+  }
 }/*# sourceMappingURL=popularTours.css.map */

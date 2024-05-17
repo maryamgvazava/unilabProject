@@ -23,4 +23,15 @@ body {
 }
 .blogSection .blogsDiv .blogs h3 {
   font-size: 32px;
+}
+@media screen and (max-width: 900px) {
+  .blogSection .blogsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .blogSection {
+    padding: 0 70px 60px;
+  }
 }/*# sourceMappingURL=blogs.css.map */

@@ -20,7 +20,7 @@ body{
                     width: 100%;
                 }
                 select,
-                .chooseDate{
+                .chooseNumber{
                     font-size: 28px;
                     font-weight: 400;
                     color: rgba(66, 66, 68, 0.629);
@@ -34,12 +34,45 @@ body{
                     color: rgba(66, 66, 68, 1);
                     font-weight: 400;
                    }
+                  
                 }
                     .wrapper{
-                         margin-right: 80px;
+
+                       
+                        margin-right: 80px;
+
                      }
+                     .dates{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100% ;
+                        font-size: 28px;
+                        font-weight: 400;
+                        color: rgba(66, 66, 68, 0.629);
+                        border: none;
+                        border-radius: 20px;
+                        margin-bottom: 40px;
+                        .chooseDate{
+                            font-size: 28px;
+                            font-weight: 400;
+                            color: rgba(66, 66, 68, 0.629);
+                            padding: 30px 50px;
+                            border: none;
+                            border-radius: 20px;
+                            margin-bottom: 40px;
+                           }
+                    }
     
             }
+
+            
+            @media screen and (max-width: 900px) {
+                .inps{
+                   flex-wrap: wrap;
+             }
+            }
+
+            
            .bookNow{
                 background-color: rgba(255, 103, 0, 1);
                 width: 100%;
@@ -55,5 +88,21 @@ body{
     }
 }
 
-         
-        
+
+
+@media screen and (max-width: 900px) {
+    .bookTrip{
+        padding: 60px 70px;
+ }
+}
+
+
+
+
+
+
+
+
+
+/*          
+https://www.figma.com/file/NfmAiI3aeh05lJVMCbfIQF/%E1%83%9E%E1%83%A0%E1%83%90%E1%83%A5%E1%83%A2%E1%83%98%E1%83%99%E1%83%A3%E1%83%9A%E1%83%98-%E1%83%93%E1%83%90%E1%83%95%E1%83%90%E1%83%9A%E1%83%94%E1%83%91%E1%83%90-1?type=design&node-id=0-1&mode=design&t=pwifAjdxvcJeMDtS-0 */

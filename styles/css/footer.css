@@ -89,6 +89,12 @@ footer .footersection .contactUs .sendArrow {
   left: 147px;
   bottom: 62px;
 }
+@media screen and (max-width: 900px) {
+  footer .footersection {
+    padding: 60px 70px;
+    flex-wrap: wrap;
+  }
+}
 footer .copyright {
   display: flex;
   justify-content: center;

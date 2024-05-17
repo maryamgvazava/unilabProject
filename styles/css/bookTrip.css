@@ -22,7 +22,7 @@ body {
   width: 100%;
 }
 .bookTrip form .inps select,
-.bookTrip form .inps .chooseDate {
+.bookTrip form .inps .chooseNumber {
   font-size: 28px;
   font-weight: 400;
   color: rgba(66, 66, 68, 0.629);
@@ -33,13 +33,38 @@ body {
   margin-bottom: 40px;
 }
 .bookTrip form .inps select option,
-.bookTrip form .inps .chooseDate option {
+.bookTrip form .inps .chooseNumber option {
   font-size: 28px;
   color: rgb(66, 66, 68);
   font-weight: 400;
 }
 .bookTrip form .inps .wrapper {
   margin-right: 80px;
+}
+.bookTrip form .inps .dates {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(66, 66, 68, 0.629);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.bookTrip form .inps .dates .chooseDate {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(66, 66, 68, 0.629);
+  padding: 30px 50px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 900px) {
+  .bookTrip form .inps {
+    flex-wrap: wrap;
+  }
 }
 .bookTrip form .bookNow {
   background-color: rgb(255, 103, 0);
@@ -51,4 +76,12 @@ body {
   color: #fff;
   border: none;
   padding: 30px 50px;
-}/*# sourceMappingURL=bookTrip.css.map */
+}
+
+@media screen and (max-width: 900px) {
+  .bookTrip {
+    padding: 60px 70px;
+  }
+}
+/*          
+https://www.figma.com/file/NfmAiI3aeh05lJVMCbfIQF/%E1%83%9E%E1%83%A0%E1%83%90%E1%83%A5%E1%83%A2%E1%83%98%E1%83%99%E1%83%A3%E1%83%9A%E1%83%98-%E1%83%93%E1%83%90%E1%83%95%E1%83%90%E1%83%9A%E1%83%94%E1%83%91%E1%83%90-1?type=design&node-id=0-1&mode=design&t=pwifAjdxvcJeMDtS-0 *//*# sourceMappingURL=bookTrip.css.map */

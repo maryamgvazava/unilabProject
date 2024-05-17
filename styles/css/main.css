@@ -37,6 +37,11 @@ body {
 .services .cards .card p {
   font-size: 18px;
 }
+@media screen and (max-width: 900px) {
+  .services .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .memorableTrips {
   padding: 92px 170px 0 170px !important;
@@ -51,6 +56,11 @@ body {
   border-radius: 40px;
 }
 
+@media screen and (max-width: 900px) {
+  .services {
+    padding: 60px 70px;
+  }
+}
 body {
   margin: 0;
 }
@@ -59,8 +69,6 @@ body {
   padding: 60px 170px;
 }
 .popularTours .places {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -72,6 +80,11 @@ body {
   height: 341px;
   border-radius: 20px;
 }
+@media screen and (max-width: 900px) {
+  .popularTours .places {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .popularTours .carrouselButtons {
   display: flex;
   justify-content: space-between;
@@ -81,6 +94,11 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .popularTours {
+    padding: 60px 70px;
+  }
+}
 body {
   margin: 0;
 }
@@ -107,7 +125,17 @@ body {
 .blogSection .blogsDiv .blogs h3 {
   font-size: 32px;
 }
+@media screen and (max-width: 900px) {
+  .blogSection .blogsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media screen and (max-width: 900px) {
+  .blogSection {
+    padding: 0 70px 60px;
+  }
+}
 body {
   margin: 0;
 }
@@ -132,7 +160,7 @@ body {
   width: 100%;
 }
 .bookTrip form .inps select,
-.bookTrip form .inps .chooseDate {
+.bookTrip form .inps .chooseNumber {
   font-size: 28px;
   font-weight: 400;
   color: rgba(66, 66, 68, 0.629);
@@ -143,13 +171,38 @@ body {
   margin-bottom: 40px;
 }
 .bookTrip form .inps select option,
-.bookTrip form .inps .chooseDate option {
+.bookTrip form .inps .chooseNumber option {
   font-size: 28px;
   color: rgb(66, 66, 68);
   font-weight: 400;
 }
 .bookTrip form .inps .wrapper {
   margin-right: 80px;
+}
+.bookTrip form .inps .dates {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(66, 66, 68, 0.629);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.bookTrip form .inps .dates .chooseDate {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(66, 66, 68, 0.629);
+  padding: 30px 50px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 900px) {
+  .bookTrip form .inps {
+    flex-wrap: wrap;
+  }
 }
 .bookTrip form .bookNow {
   background-color: rgb(255, 103, 0);
@@ -163,6 +216,13 @@ body {
   padding: 30px 50px;
 }
 
+@media screen and (max-width: 900px) {
+  .bookTrip {
+    padding: 60px 70px;
+  }
+}
+/*          
+https://www.figma.com/file/NfmAiI3aeh05lJVMCbfIQF/%E1%83%9E%E1%83%A0%E1%83%90%E1%83%A5%E1%83%A2%E1%83%98%E1%83%99%E1%83%A3%E1%83%9A%E1%83%98-%E1%83%93%E1%83%90%E1%83%95%E1%83%90%E1%83%9A%E1%83%94%E1%83%91%E1%83%90-1?type=design&node-id=0-1&mode=design&t=pwifAjdxvcJeMDtS-0 */
 body {
   margin: 0;
 }
@@ -253,6 +313,12 @@ footer .footersection .contactUs .sendArrow {
   /* top:5px */
   left: 147px;
   bottom: 62px;
+}
+@media screen and (max-width: 900px) {
+  footer .footersection {
+    padding: 60px 70px;
+    flex-wrap: wrap;
+  }
 }
 footer .copyright {
   display: flex;
@@ -357,6 +423,11 @@ header nav ul li a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration-line: none;
   cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  header nav {
+    display: none;
+  }
 }
 
 .mainPage {
