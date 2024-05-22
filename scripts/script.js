@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     servicesObject();
     popularTours();
     blogsFunctions()
+
 });
 
 
@@ -33,6 +34,8 @@ window.addEventListener('scroll', function(){
 loginLogo.addEventListener('click', function(){
     loginToggle.classList.toggle('showLoginToggle')
 })
+
+
 
 
 

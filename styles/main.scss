@@ -157,3 +157,21 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.247) 9%, rgba(0, 0, 0, 0.151)
         }
     }
 }
+
+.searchedOptions{
+    padding: 70px;
+
+display: flex;
+justify-content: space-evenly;
+
+
+    .tourcard{
+        margin-right: 20px;
+        img{
+            width: 362px;
+            height: 341px;
+            border-radius: 20px;
+        }
+    }
+
+}

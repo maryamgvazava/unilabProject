@@ -58,7 +58,7 @@ body{
 }
 
 .memorableTrips{
-    padding: 92px 170px  0 170px!important;
+    padding: 92px 170px  0 170px;
         h2{
             color: #424244;
             font-size: 40px;
@@ -74,7 +74,7 @@ body{
 
 
 @media screen and (max-width: 900px) {
-    .services{
+    .services, .memorableTrips{
         padding: 60px 70px;
     }
 }

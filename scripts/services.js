@@ -106,3 +106,4 @@ seeAllServices.addEventListener('click', function(e){
 }
 
 
+servicesObject()

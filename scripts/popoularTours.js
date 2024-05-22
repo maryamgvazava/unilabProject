@@ -1,3 +1,5 @@
+// import selectLocation from "./selectLocation";
+
 export default function popularTours (){
     let popularTours = [
         {
@@ -82,6 +84,11 @@ export default function popularTours (){
 const places = document.querySelector('.places');
 const leftBtn = document.querySelector('.leftBtn');
 const rightBtn = document.querySelector('.rightBtn');
+let bookNow = document.querySelector('.bookNow')
+let selectedTours = document.querySelector('.SelectedTours')
+
+let searchedOptions = document.querySelector('.searchedOptions')
+
 const ToursPerPage = 4;
 let currentPage = 0;
 
@@ -104,7 +111,7 @@ function displayTours() {
     });
 }
 
-displayTours(); 
+
 
 leftBtn.addEventListener('click', function () {
     currentPage = (currentPage + 1) % Math.ceil(popularTours.length / ToursPerPage);
@@ -117,7 +124,41 @@ rightBtn.addEventListener('click', function () {
 });
 
 
+
+
+
+popularTours.forEach(tour => {
+    console.log(Array.from(selectedTours.options))
+    let optionExists = Array.from(selectedTours.options).some(option => option.value === tour.title);
+    if (!optionExists) {
+        selectedTours.innerHTML+=` <option value="${tour.title}">${tour.title}</option>`
+    }
+});
+
+  
+displayTours(); 
+
+bookNow.addEventListener('click', function (e) {
+    e.preventDefault();
+    searchedOptions.innerHTML = ""; 
+    const selectedValue = selectedTours.value;
+    popularTours.forEach(tour => {
+        if (selectedValue === tour.title) {
+            let tourcard = document.createElement("div");
+            tourcard.classList.add("tourcard");
+            tourcard.innerHTML = `
+                <img src="${tour.image}" alt="">
+                <h3>${tour.title}</h3>
+                <p>${tour.duration}</p>
+                <p>${tour.price}</p>
+            `;
+            searchedOptions.appendChild(tourcard);
+        }
+    });
+});
+    
+
+
+
     return popularTours;
 }
-
-

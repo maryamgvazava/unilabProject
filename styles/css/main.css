@@ -44,7 +44,7 @@ body {
 }
 
 .memorableTrips {
-  padding: 92px 170px 0 170px !important;
+  padding: 92px 170px 0 170px;
 }
 .memorableTrips h2 {
   color: #424244;
@@ -57,7 +57,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .services {
+  .services, .memorableTrips {
     padding: 60px 70px;
   }
 }
@@ -473,4 +473,18 @@ header nav ul li a {
   border: none;
   padding: 20px 40px;
   margin: 10px;
+}
+
+.searchedOptions {
+  padding: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.searchedOptions .tourcard {
+  margin-right: 20px;
+}
+.searchedOptions .tourcard img {
+  width: 362px;
+  height: 341px;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */
