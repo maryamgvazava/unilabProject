@@ -52,7 +52,8 @@ body {
   border-radius: 20px;
   margin-bottom: 40px;
 }
-.bookTrip form .inps .dates .chooseDate {
+.bookTrip form .inps .dates .chooseStartDate,
+.bookTrip form .inps .dates .chooseEndDate {
   font-size: 28px;
   font-weight: 400;
   color: rgba(66, 66, 68, 0.629);
